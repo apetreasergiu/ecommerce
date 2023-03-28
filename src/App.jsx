@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Wishlist from "./pages/Wishlist";
 import Products from "./pages/Products";
 import Footer from "./components/Footer";
+import ProductPage from "./components/ProductPage";
 import "./App.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/products' element={<Products />} />
+					<Route path='/product/:id' element={<ProductPage />} />
 					<Route path='/wishlist' element={<Wishlist />} />
 				</Routes>
 			</Router>

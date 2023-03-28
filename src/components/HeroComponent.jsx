@@ -14,7 +14,7 @@ const Hero = () => {
 					</div>
 
 					<h1 className='text-3xl lg:text-[70px] xl:text-[80px] leading-[1.1] font-extralight font-logo text-center lg:text-left'>
-						Men's And Women's Clothing Online
+						Elevate Your Style with Our Clothing Collection
 					</h1>
 
 					<Link
@@ -28,7 +28,7 @@ const Hero = () => {
 					<img
 						src={HeroImg}
 						alt='hero'
-						className='h-[50vh] xl:h-[50vh] object-cover'
+						className='h-[50vh] xl:h-[80vh] object-cover'
 					/>
 				</div>
 			</div>

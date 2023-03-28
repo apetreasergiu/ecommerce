@@ -3,7 +3,7 @@ import { FiGithub, FiLinkedin } from "react-icons/fi";
 
 const Footer = () => {
 	return (
-		<footer className='bg-gray-100 shadow-md fixed bottom-0 w-full'>
+		<footer className='bg-gray-100 shadow-md relative mt-auto w-full transition-all duration-300'>
 			<div className='px-4 py-4'>
 				<div className='flex justify-between items-center'>
 					<div>
