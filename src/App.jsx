@@ -18,8 +18,8 @@ function App() {
 					<Route path='/product/:id' element={<ProductPage />} />
 					<Route path='/wishlist' element={<Wishlist />} />
 				</Routes>
+				<Footer />
 			</Router>
-			<Footer />
 		</main>
 	);
 }

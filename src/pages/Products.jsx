@@ -27,6 +27,7 @@ const Products = () => {
 			(selectedCategory === "" || product.category === selectedCategory)
 		);
 	});
+
 	const onAddToWishlist = (product) => {
 		let wishlistProducts = [];
 		const productsString = localStorage.getItem("produse");
@@ -39,18 +40,20 @@ const Products = () => {
 
 	return (
 		<div>
-			<div className='flex justify-between items-center mb-4'>
+			<div className='flex justify-center items-center mb-4'>
 				<input
 					type='text'
 					placeholder='Search...'
 					value={searchTerm}
 					onChange={handleSearchChange}
-					className='border border-gray-400 p-2 rounded'
+					className='border border-gray-400 p-2 rounded w-1/2'
 				/>
+			</div>
+			<div className='flex justify-start items-center mb-4 ml-4'>
 				<select
 					value={selectedCategory}
 					onChange={handleCategoryChange}
-					className='border border-gray-400 p-2 rounded'>
+					className='bg-white text-gray-700 border border-gray-400 rounded-md shadow-sm p-2 focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500'>
 					<option value=''>All Categories</option>
 					<option value="men's clothing">Men's Clothing</option>
 					<option value="women's clothing">Women's Clothing</option>

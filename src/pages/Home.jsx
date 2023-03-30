@@ -1,11 +1,13 @@
 import React from "react";
 import HeroComponent from "../components/HeroComponent";
 import PopularProducts from "../components/PopularProducts";
+import CategoryList from "../components/CategoryList";
 
 function Home() {
 	return (
 		<div>
 			<HeroComponent />
+			<CategoryList />
 			<div
 				style={{
 					display: "flex",

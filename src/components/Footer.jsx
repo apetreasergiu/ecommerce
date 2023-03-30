@@ -1,5 +1,6 @@
 import React from "react";
 import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
 	return (
@@ -11,16 +12,16 @@ const Footer = () => {
 							OutStock &copy; 2023
 						</div>
 						<div className='flex space-x-4'>
-							<a
-								href='#'
+							<Link
+								to='/'
 								className='block text-lg py-2.5 px-4 rounded hover:bg-gray-200'>
 								Home
-							</a>
-							<a
-								href='#'
+							</Link>
+							<Link
+								to='/products'
 								className='block text-lg py-2.5 px-4 rounded hover:bg-gray-200'>
 								Products
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className='flex space-x-4'>
